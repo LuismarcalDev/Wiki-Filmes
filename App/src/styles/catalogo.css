@@ -1,0 +1,94 @@
+.catalogo{
+    color: white;
+    margin-top: -140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    top: 50px;
+}
+.options button{
+    padding: 10px;
+    border: none;
+    font-family: "poppins";
+    color: white;
+    background-color: #110C21;
+    width: 100px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+.options button:hover{
+    padding: 10px;
+    border: none;
+    font-family: "poppins";
+    color: rgba(255, 255, 255, 0.774);
+    background-color: #110C21;
+    width: 100px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    transition: 600ms;
+}
+#btn001{
+       background-color: #4745453b;
+}
+.container-catalogo{
+display: flex;
+flex-direction: row;
+gap: 30px;
+overflow-x: auto;
+scroll-behavior: smooth;
+}
+.poster-film img{
+    width: 240px;
+    cursor: pointer;
+    transition: all 600ms ease;
+}
+.poster-film img:hover{
+    width: 250px;
+    cursor: pointer;
+    transition: 600ms;
+}
+#btscapone{
+width: 64px;
+height: 64px;
+border-radius: 100%;
+background-color: #110c2102;
+border: none;
+cursor: pointer;
+position: relative;
+top: 230px;
+}
+#btscapone img{
+    width: 32px;
+}
+.container-catalogo::-webkit-scrollbar {
+  display: none; 
+}
+
+.btn-controle{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.teste{
+    width: 600px;
+    height: 700px;
+    background-color: red;
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position:sticky;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.068);
+  
+}
+header h2{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+header h2:hover{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.76);
+    cursor: pointer;
+    transition: 600ms;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-left: 155px;
+    
+}
+.menu a{
+    color: white;
+    font-family: "poppins";
+    text-decoration: none;
+    font-size: 21px;
+}
+.menu a:hover{
+    color: rgba(255, 255, 255, 0.74);
+    font-family: "poppins";
+    text-decoration: none;
+    font-size: 21px;
+    transition: 600ms;
+}
+header button{
+display: flex;
+flex-direction: row;
+align-items: center;
+border: 1px rgba(255, 255, 255, 0.363), solid;
+background-color: transparent;
+padding: 10px;
+border-radius: 4px;
+gap: 2px;
+}
+header button img{
+    width: 24px;
+}
+header button input{
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    outline: none;
+    margin-left: 10px;
+    font-family: "poppins";
+    letter-spacing: 1px;
+
+    
+}
+#click{
+    border: none;
+    color: rgba(255, 255, 255, 0.829);
+    cursor: pointer;
+}
+
+
+  @media screen and (max-width: 767px){
+    header{
+        padding-left:10px ;
+        padding-right: 10px;
+        background-color: rgba(0, 0, 0, 0.123);
+    }
+    header h2{
+        font-size: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    .menu-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-responsive img{
+        width: 32px;
+        cursor: Pointer;
+    }
+  
+  }

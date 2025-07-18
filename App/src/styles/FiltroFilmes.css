@@ -1,0 +1,49 @@
+.filmes-geral{
+   display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+}
+.filmesFiltro img{
+    width: 240px;
+    cursor: pointer;
+}
+.title-filtro{
+    color: white;
+    margin-top: 40px;
+}
+.title-filtro h2{
+    font-family: "poppins";
+}
+.FilmesFiltro01{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* Isso estiliza usando o prefixo "rs" */
+.select{
+    width: 240px;
+    margin-top: 10px;
+    outline: none;
+   
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Firefox */
+#FilmesFiltro01 {
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}

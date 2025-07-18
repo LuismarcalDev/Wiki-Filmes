@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Responsiva</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* HAMBURGUER */
+    .hamburguer {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburguer div {
+      width: 25px;
+      height: 3px;
+      background: white;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #333;
+        flex-direction: column;
+        display: none;
+      }
+
+      /* Checkbox controlando menu */
+      #menu-toggle:checked + .menu {
+        display: flex;
+      }
+
+      .hamburguer {
+        display: flex;
+      }
+    }
+
+    /* Esconde checkbox */
+    #menu-toggle {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Scroll Sistemas</div>
+
+    <!-- Checkbox invisível pra controlar o menu -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Ícone hamburguer -->
+    <label for="menu-toggle" class="hamburguer">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+
+    <!-- Menu de links -->
+    <div class="menu">
+      <a href="#">Início</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+      <a href="#">Sobre</a>
+    </div>
+  </nav>
+
+</body>
+</html>

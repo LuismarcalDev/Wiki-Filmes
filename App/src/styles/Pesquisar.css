@@ -1,0 +1,34 @@
+#pesquisa{
+width: 1900px;
+height: 890px;
+padding-left: 50px;
+padding-right: 50px;
+background-color: rgba(0, 0, 0, 0);
+color: white;
+
+}
+.container{
+    background-color: rgba(143, 69, 69, 0);
+
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container h2{
+    font-family: "poppins";
+    font-weight: 500;
+
+}
+.filmeSolo img{
+    width: 240px;
+    cursor: pointer;
+}
+
+.resultadosContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+    
+}

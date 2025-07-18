@@ -1,0 +1,47 @@
+footer{
+    background-color: rgb(8, 8, 8);
+    color: white;
+    
+    margin-top: 70px;
+    height: 280px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+footer h2{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    margin-top: 50px;
+}
+#rose{
+    width:38%;
+    text-align: center;
+    font-family: "poppins";
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(240, 248, 255, 0.651);
+}
+.copy{
+    background-color: black;
+    width: 100%;
+  
+    margin-top: 10px;
+}
+#biju{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: "poppins";
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+FontAwesomeIcon{
+    font-size: 20px;
+}

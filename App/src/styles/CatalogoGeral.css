@@ -1,0 +1,32 @@
+#catalogo-geral-h2{
+    color: white;
+    position: relative;
+    top: 45px;
+    font-family: "poppins";
+}
+.catalogo-geral{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -390px;
+}
+#comedia{
+    margin-top: 90px;
+}
+#acao{
+    margin-top: 60px;
+}
+#recomendacao{
+    margin-top: 10px;
+}
+#fantasia{
+    margin-top: 30px;
+}
+#Animação{
+    margin-top: 30px;
+}
+#Guerra{
+    margin-top: 30px;
+}
+#Aventura{
+    margin-top: 30px;
+}
